@@ -1,0 +1,26 @@
+#navbar{
+    background-color: rgb(2,0,36) ;
+}
+
+#navbar p{
+    color: whitesmoke;
+    font-weight: bold;
+    margin: 0;
+}
+
+#navitem-container{
+    margin-left: 8%;
+    margin-right: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#navlogo{
+    width : 3rem;
+    border-radius: 1rem;
+}
+
+#mask{
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 13rem;
+}
