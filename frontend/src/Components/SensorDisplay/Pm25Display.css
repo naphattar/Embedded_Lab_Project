@@ -1,15 +1,15 @@
-.HumidityDisplay {
+.Pm25Display {
     position: absolute;
     width: 40%;
     height: 300px;
-    left: 50%;
-    top: 100px;
+    left: 5%;
+    top: 415px;
 
     background: #DDF0F8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 14px;
 }
-.HumidityDisplay h1{
+.Pm25Display h1{
     position: absolute;
     margin: 10px;
 
@@ -32,14 +32,13 @@
     mix-blend-mode: overlay;
 
 }
-.humidityBarBorder{
+.Pm25BarBorder{
     position: absolute;
     top:60px;
     left: 39%;
-
     object-fit: none;
 }
-.HumidityDisplay p{
+.Pm25Display p{
     position: absolute;
     top: 200px;
     left: 8%;
