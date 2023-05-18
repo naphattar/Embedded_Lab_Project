@@ -2,14 +2,13 @@
     text-align: center;
     height: 70px;
     background-color: #21AB92;
-    ;
+    padding: 10px;
 }
 #homeMenuBar h1{
     font-family: 'Alike Angular';
-    font-style: normal;
-    font-weight: 400;
+    font-weight: bold;
     font-size: 40px;
-    line-height: 50px;
-
+    margin-bottom: 0px;
+    vertical-align: middle;
     color: #072711;
 }

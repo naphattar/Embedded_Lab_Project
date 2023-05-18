@@ -2,7 +2,7 @@
     position: absolute;
     width: 40%;
     height: 300px;
-    left: 5%;
+    left: 7%;
     top: 100px;
 
     background: #DDF0F8;
@@ -11,37 +11,33 @@
 }
 .TemperatureDisplay h1{
     position: absolute;
-    margin: 10px;
-
+    margin: 20px;
     font-family: 'Alike Angular';
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 40px;
-    /* identical to box height */
-
-
     color: #072711;
 }
-.TemperatureDisplay img{
 
-    width: 30.363636%;
-    height: 143px;
-    top:50px;
-    left:18%;
+.TemperatureDisplay img{
+    width: auto;
+    height: 123px;
+    top:77px;
+    left:10%;
     position: absolute;
 }
-.TemperatureDisplay p{
-position: absolute;
-top:110px;
-left: 45%;
-font-family: 'Alike Angular';
-font-style: normal;
-font-weight: 400;
-font-size: 48px;
-line-height: 60px;
 
-color: #072711;
+.TemperatureDisplay p{
+    position: absolute;
+    top:110px;
+    left: 45%;
+    font-family: 'Alike Angular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+    color: #072711;
 }
 .temperatureBarCircle{
 position: absolute;

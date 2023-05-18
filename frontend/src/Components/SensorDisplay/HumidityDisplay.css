@@ -2,7 +2,7 @@
     position: absolute;
     width: 40%;
     height: 300px;
-    left: 50%;
+    right: 7%;
     top: 100px;
 
     background: #DDF0F8;
@@ -11,16 +11,12 @@
 }
 .HumidityDisplay h1{
     position: absolute;
-    margin: 10px;
-
+    margin: 20px;
     font-family: 'Alike Angular';
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 40px;
-    /* identical to box height */
-
-
     color: #072711;
 }
 .icon{
@@ -42,7 +38,7 @@
 .HumidityDisplay p{
     position: absolute;
     top: 200px;
-    left: 8%;
+    left: 12%;
     font-family: 'Alike Angular';
     font-style: normal;
     font-weight: 400;
@@ -50,4 +46,4 @@
     line-height: 60px;
     
     color: #072711;
-    }
+}
