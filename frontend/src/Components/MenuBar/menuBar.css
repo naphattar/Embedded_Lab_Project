@@ -1,0 +1,15 @@
+#homeMenuBar {
+    text-align: center;
+    height: 70px;
+    background-color: #21AB92;
+    ;
+}
+#homeMenuBar h1{
+    font-family: 'Alike Angular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+
+    color: #072711;
+}
