@@ -50,22 +50,29 @@ border-radius: 100%;
 background: #EF5361;
 }
 .temperatureBarMeter{
-    position: absolute;
+    position: relative;
     width: 76%;
     height: 22px;
-    left: 17.6363636365%;
-    top: 234px;
+
+
 
     background: #EF5361;
     border-radius: 0px 20px 20px 0px;
 }
 .temperatureBarBorder{
-    position: absolute;
+    position: relative;
     width: 76.363636363%;
     height: 22px;
-    left: 17.6363636365%;
+    left: 16.8%;
     top: 234px;
 
     background: #EEFCF2;
     border-radius: 0px 20px 20px 0px;
+}
+@media only screen and (max-width: 1190px) {
+    .TemperatureDisplay {
+        min-width: 60%;
+        height: 300px;
+        left:20%;
+        }
 }

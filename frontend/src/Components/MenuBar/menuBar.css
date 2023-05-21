@@ -12,3 +12,9 @@
     vertical-align: middle;
     color: #072711;
 }
+.SensorContainer{
+    background: #EEFCF2;
+    height: 100%;
+    position:relative;
+    max-width: 1960px;
+}

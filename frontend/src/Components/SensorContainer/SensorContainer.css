@@ -1,5 +1,6 @@
-.SensorContainer{
+body{
     background: #EEFCF2;
     height: 100%;
     position:relative;
+    max-width: 1960px;
 }

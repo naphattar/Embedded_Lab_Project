@@ -28,12 +28,27 @@
     mix-blend-mode: overlay;
 
 }
-.humidityBarBorder{
-    position: absolute;
-    top:60px;
-    left: 39%;
 
-    object-fit: none;
+.humidityBarBorder {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    height: 150px;
+    width: 300px;
+    border-radius: 150px 150px 0 0;
+    background-color: #EEFCF2;
+}
+.humidityBarCover{
+    position: relative;
+    top: 59%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 125px;
+    width: 250px;
+    border-radius: 125px 125px 0 0;
+    background-color: #DDF0F8;
+
 }
 .HumidityDisplay p{
     position: absolute;
@@ -46,4 +61,12 @@
     line-height: 60px;
     
     color: #072711;
+}
+@media only screen and (max-width: 1190px) {
+    .HumidityDisplay {
+        min-width: 60%;
+        height: 300px;
+        top: 435px;
+        left:20%;
+        }
 }
