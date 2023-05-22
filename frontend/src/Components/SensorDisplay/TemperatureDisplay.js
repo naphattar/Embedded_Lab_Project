@@ -5,7 +5,6 @@ import image from "../../assets/temperatureIcon.png";
 
 function TemperatureDisplay(prop) {
   const temp = (prop.temp / 45) * 100;
-  console.log(temp);
   return (
     <div class="TemperatureDisplay">
       <h1>Temperature</h1>

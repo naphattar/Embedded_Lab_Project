@@ -49,13 +49,21 @@ border-radius: 100%;
 
 background: #EF5361;
 }
+
+@keyframes progress {
+    0% { --percentage: 0; }
+    100% { --percentage: var(--value); }
+  }
+  
+  @property --percentage {
+    syntax: '<number>';
+    inherits: true;
+    initial-value: 0;
+  }
 .temperatureBarMeter{
     position: relative;
     width: 76%;
     height: 22px;
-
-
-
     background: #EF5361;
     border-radius: 0px 20px 20px 0px;
 }

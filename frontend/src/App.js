@@ -42,6 +42,7 @@ function App() {
   }, []);
   return (
     <div className="App">
+      <meta http-equiv="refresh" content="10" />
       <MenuBar />
       <SensorContainer />
       <TemperatureDisplay temp={temp} />
