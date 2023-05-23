@@ -2,8 +2,8 @@
 #include <ESP8266WiFi.h>
 #include <PubSubClient.h>
 
-const char* ssid = "Tar";
-const char* password = "tartartar";
+const char* ssid = "Alhaitham";
+const char* password = "09095373581234";
 const char* mqtt_server = "broker.netpie.io";
 const int mqtt_port = 1883;
 const char* mqtt_Client = "5dcf389f-09f4-4d43-8b64-420b6225a51e";

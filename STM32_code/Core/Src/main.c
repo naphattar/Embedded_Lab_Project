@@ -72,9 +72,9 @@ int sleepTime = 4680;
 
 uint8_t RHI, RHD, TCI, TCD, SUM;
 uint32_t pMillis, cMillis;
-int tCelsius = 0;
+uint8_t tCelsius = 0;
 float tFahrenheit = 0;
-float RH = 0;
+uint8_t RH = 0;
 
 /* USER CODE END PV */
 
@@ -252,20 +252,20 @@ int main(void)
 	    	SUM = DHT11_Read(); // Check sum
 	    	if (RHI + RHD + TCI + TCD == SUM) {
 	    		// Can use RHI and TCI for any purposes if whole number only needed
-	    		tCelsius = (float)TCI + (float)(TCD/10.0);
+	    		tCelsius = (uint8_t)TCI + (uint8_t)(TCD/10.0);
 	    		tFahrenheit = tCelsius * 9/5 + 32;
-	    		RH = (float)RHI + (float)(RHD/10.0);
+	    		RH = (uint8_t)RHI + (uint8_t)(RHD/10.0);
 	    		// Can use tCelsius, tFahrenheit and RH for any purposes
 	    	}
 	    	// HAL_UART_Transmit(&huart2, TCI, 4, 100);
 
 	    	char out[20] = "";
 	    	HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
-	    	sprintf(out, "%.2f|%.2f|", tCelsius,RH);
+	    	sprintf(out, "%u|%u|", tCelsius,RH);
 	    	HAL_UART_Transmit(&huart1, out, strlen(out), 100);
 	    	//char temp[50] = "";
 	        //sprintf(temp, " temp : = %.2f , humid = %.2f\r\n", tCelsius,RH);
-	    	//HAL_UART_Transmit(&huart2, out, strlen(out), 100);
+	    	HAL_UART_Transmit(&huart2, out, strlen(out), 100);
 	    }
 	    HAL_Delay(100);
 
@@ -279,6 +279,7 @@ int main(void)
 	    HAL_ADC_Stop(&hadc1);
 
 	    // Send reading to serial console
+	    reading = reading*1000 /4096;
 	    sprintf(buffer, "%u\n", reading);
 	    HAL_UART_Transmit(&huart1, (uint8_t*)buffer, strlen(buffer), 100);
 	    char temp[50] = "";
