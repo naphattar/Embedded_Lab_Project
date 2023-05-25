@@ -11,7 +11,7 @@ function Co2Display(props) {
 
   return (
     <div class="Co2Display">
-      <h1>CO₂</h1>
+      <h1>CO/Alcohol/Hydrogen/Ammonia/Methane</h1>
       <img class="icon" src={image} alt="co2Icon" />
       <div style={gas} class="Co2BarBorder">
         {/* <div class="Co2BarCover"></div> */}
